@@ -15,3 +15,14 @@ input_dataset = dataiku.Dataset(input_dataset_name)
 output_dataset_name = get_output_names_for_role('output_dataset')[0]
 output_dataset = dataiku.Dataset(output_dataset_name)
 
+
+input_dataset_df = input_dataset.get_dataframe()
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+sorted_columns_data_df = input_dataset_df[sorted(input_dataset_df.columns)]
+#sorted_columns_data_df
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+# Write recipe outputs
+sorted_columns_data = dataiku.Dataset("sorted_columns_data")
+sorted_columns_data.write_with_schema(sorted_columns_data_df)
