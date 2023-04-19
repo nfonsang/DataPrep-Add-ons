@@ -2,9 +2,9 @@
 {
     "meta": {
         // label: name of the parameter set as displayed, should be short
-        "label": "Parameter set 1",
+        "label": "Global parameters",
         // description: longer string to help end users understand what these parameter correspond to
-        "description": "",
+        "description": "Currently, there are no parameters",
         // icon: must be one of the FontAwesome 3.2.1 icons, complete list here at https://fontawesome.com/v3.2.1/icons/
         "icon": "icon-puzzle-piece"
     },
