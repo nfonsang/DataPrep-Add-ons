@@ -1,8 +1,8 @@
-/* This file is the descriptor for the parameter set bla-bla-bla */
+/* This file is the descriptor for the parameter set 1 */
 {
     "meta": {
         // label: name of the parameter set as displayed, should be short
-        "label": "Parameter set bla-bla-bla",
+        "label": "Parameter set 1",
         // description: longer string to help end users understand what these parameter correspond to
         "description": "",
         // icon: must be one of the FontAwesome 3.2.1 icons, complete list here at https://fontawesome.com/v3.2.1/icons/
