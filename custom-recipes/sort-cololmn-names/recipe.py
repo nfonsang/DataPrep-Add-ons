@@ -20,7 +20,6 @@ input_dataset_df = input_dataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 sorted_columns_data_df = input_dataset_df[sorted(input_dataset_df.columns)]
-#sorted_columns_data_df
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
