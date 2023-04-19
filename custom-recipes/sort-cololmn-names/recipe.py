@@ -19,5 +19,5 @@ input_dataset_df = input_dataset.get_dataframe()
 sorted_columns_data_df = input_dataset_df[sorted(input_dataset_df.columns)]
 
 # Write recipe outputs
-sorted_columns_data = dataiku.Dataset("sorted_columns_data")
+sorted_columns_data = dataiku.Dataset("output_dataset")
 sorted_columns_data.write_with_schema(sorted_columns_data_df)
