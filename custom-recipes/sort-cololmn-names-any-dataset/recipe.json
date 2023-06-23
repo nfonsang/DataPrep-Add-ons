@@ -2,7 +2,7 @@
 {
     "meta": {
 
-        "label": "Sort Column Names for any Dataset",
+        "label": "Sort Column Names for any DSS Dataset",
         "description": "This recipe sorts the column names of any DSS dataset",
         "icon": "icon-list-ol"
     },
