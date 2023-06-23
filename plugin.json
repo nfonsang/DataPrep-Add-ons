@@ -5,7 +5,6 @@
         "label": "Data Prep Add-ons",
         "description": "This plugin contains recipes for data preparation and manipulation",
         "author": "Dataiku (Neba Nfonsang)",
-        "icon": "icon-tags",
         "category": "Data Preparation",
         "icon": "icon-font-awesome-3.2.1",
         "licenseInfo": "Apache Software License",
