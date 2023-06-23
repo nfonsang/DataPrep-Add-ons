@@ -2,7 +2,7 @@
 {
     "meta": {
 
-        "label": "Data Prep Add-ons",
+        "label": "Sort Column Names",
         "description": "This recipe sorts the column names of a dataset",
         "icon": "icon-list-ol"
     },
