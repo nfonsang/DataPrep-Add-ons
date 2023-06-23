@@ -3,7 +3,7 @@
     "meta": {
 
         "label": "Sort Column Names",
-        "description": "This recipe sorts the column names of a dataset",
+        "description": "This recipe sorts the column names of any dataset",
         "icon": "icon-list-ol"
     },
 
