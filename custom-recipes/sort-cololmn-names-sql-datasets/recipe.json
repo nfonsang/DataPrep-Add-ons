@@ -17,7 +17,8 @@
             "description": "Dataset with column names to be sorted",
             "arity": "UNARY",
             "required": true,
-            "acceptsDataset": true
+            "acceptsDataset": true,
+            'mustBeSQL': true
         }
     ],
 
