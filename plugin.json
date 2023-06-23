@@ -3,16 +3,15 @@
     "version": "0.1.0",
     "meta": {
         "label": "Data Prep Add-ons",
-         "icon": "icon-list-ol",
-        "category": "Data Preparation",
         "description": "This plugin contains recipes for data preparation and manipulation",
         "author": "Organization (Neba Nfonsang)",
+        "icon": "icon-list-ol",
+        "category": "Data Preparation",
         "icon": "icon-font-awesome-3.2.1",
         "licenseInfo": "Apache Software License",
         "url": "https://www.dataiku.com/product/plugins/data-prep-add-ons/",
-        "tags": [
-            "data prep"
-        ],
+        "tags": ["data prep"],
         "supportLevel": "NOT_SUPPORTED"
     }
 }
+
