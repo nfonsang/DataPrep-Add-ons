@@ -2,8 +2,8 @@
 {
     "meta": {
 
-        "label": "Sort Column Names for SQL Dataset",
-        "description": "This recipe sorts the column names of any SQL dataset",
+        "label": "Sort Column Names for SQL Datasets",
+        "description": "This recipe sorts the column names of an SQL dataset",
         "icon": "icon-list-ol"
     },
 
