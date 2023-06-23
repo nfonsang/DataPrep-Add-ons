@@ -1,22 +1,24 @@
-
-
-#############################
-# Your original recipe
-#############################
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 from dataiku import SQLExecutor2
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Read recipe inputs
-car_email_data_copy = dataiku.Dataset("car_email_data_copy")
+# Import the helpers for custom recipes
+from dataiku.customrecipe import get_input_names_for_role
+from dataiku.customrecipe import get_output_names_for_role
+from dataiku.customrecipe import get_recipe_config
+
+# Get input datasets
+input_dataset_name = get_input_names_for_role('input_dataset')[0]
+input_dataset = dataiku.Dataset(input_dataset_name)
+
+# Get input output datasets
+output_dataset_name = get_output_names_for_role('output_dataset')[0]
+output_dataset = dataiku.Dataset(output_dataset_name)
+
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-my_table = car_email_data_copy.project_key + "_" + car_email_data_copy.short_name
+my_table = input_dataset_copy.project_key + "_" + input_dataset.short_name
 my_table
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
