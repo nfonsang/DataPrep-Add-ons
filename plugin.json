@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "meta": {
         "label": "Data Prep Add-ons",
+         "icon": "icon-list-ol",
         "category": "Data Preparation",
         "description": "This plugin contains recipes for data preparation and manipulation",
         "author": "Organization (Neba Nfonsang)",
