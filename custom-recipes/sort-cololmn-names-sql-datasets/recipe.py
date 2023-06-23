@@ -16,28 +16,18 @@ input_dataset = dataiku.Dataset(input_dataset_name)
 output_dataset_name = get_output_names_for_role('output_dataset')[0]
 output_dataset = dataiku.Dataset(output_dataset_name)
 
+my_table = input_dataset.project_key + "_" + input_dataset.short_name
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-my_table = input_dataset_copy.project_key + "_" + input_dataset.short_name
-my_table
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-#dir(car_email_data_copy)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-schema = car_email_data_copy.read_schema()
+schema = input_dataset.read_schema()
 columns = [col["name"] for col in schema]
 sorted_cols = sorted(columns)
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 query = 'SELECT ' + ', '.join(f'"{c}"' for c in sorted_cols) + f' FROM "{my_table}"'
-print(query)
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # create an executor and pass to it the dataset so the executor knows which SQL database to target
-executor = SQLExecutor2(dataset=car_email_data_copy)
+executor = SQLExecutor2(dataset=input_dataset)
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # create a dataframe using the query
 sorted_df = executor.query_to_df(
     """
@@ -48,5 +38,4 @@ sorted_df
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
-SQL_execution_output = dataiku.Dataset("SQL_execution_output")
-SQL_execution_output.write_with_schema(sorted_df)
+output_dataset.write_with_schema(sorted_df)
