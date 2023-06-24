@@ -2,17 +2,16 @@
 //to use higher version (>=1.1) of pandas set core packages set to "corePackagesSet" to PANDAS11, PANDAS10, PANDAS11, PANDAS12, PANDAS13 or LEGACY_PANDAS023 - default if the "corePackagesSet" not specified
 
 {
-	"acceptedPythonInterpreters": [
-		"PYTHON27",
-		"PYTHON36",
-		"PYTHON37",
-		"PYTHON38",
-		"PYTHON39",
-		"PYTHON310",
-		"PYTHON311"
-	],
-	"forceConda": false,
-	"installCorePackages": true,
-	"corePackagesSet": "AUTO",
-	"installJupyterSupport": false
+    "acceptedPythonInterpreters": [
+        "PYTHON36",
+        "PYTHON37",
+        "PYTHON38",
+        "PYTHON39",
+        "PYTHON310",
+        "PYTHON311"
+    ],
+    "forceConda": false,
+    "installCorePackages": true,
+    "corePackagesSet": "AUTO",
+    "installJupyterSupport": false
 }
