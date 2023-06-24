@@ -7,7 +7,7 @@ When installing the plugin in DSS, you will be prompted to build its code enviro
 # How to Use
 - In your DSS project flow, click on a dataset to select it, then click on the DataPrep-Add-ons plugin on the right panel in the plugin recipe section.
 - select the component you need for your data preparation and proceed until you create and run the recipe.
-# How to Use
+# Plugin Components
 This plugin currently has two components:
 ## Sort Column Names for any Dataset
 This recipe component can use any DSS dataset as input. The recipe runs just like a Python recipe. Hence the recipe component can run using a local execution or containerized execution. 
